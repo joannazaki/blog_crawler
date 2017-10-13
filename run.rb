@@ -1,6 +1,8 @@
 require './crawler.rb'
 
+
+
 crawler = Crawler.new
-crawler.output_product_info(ARGV[0])
+crawler.say_hello(ARGV[0])
 
 

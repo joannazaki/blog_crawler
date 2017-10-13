@@ -1,9 +1,6 @@
 class Crawler
-	def output_product_info (product_info)
-		product_info = product_info.to_i * 10
-		puts product_info
+	def say_hello(information_on_blog)
+		puts "information_on_blog"
 	end
 end
-
-
 
