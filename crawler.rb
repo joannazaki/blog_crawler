@@ -1,6 +1,8 @@
 class Crawler
-	def say_hello(information_on_blog)
-		puts "information_on_blog"
+	def mtd (arg1="joanna", arg2="stef", arg3="riley")
+		3.times do 
+			puts "#{arg1}, #{arg2}, #{arg3}."
+		end
 	end
 end
 
