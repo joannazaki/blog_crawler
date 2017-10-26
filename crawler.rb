@@ -1,8 +1,11 @@
 class Crawler
-	def crawl (arg1="joanna", arg2="stef", arg3="riley")
-		3.times do 
-			puts "#{arg1}, #{arg2}, #{arg3}."
-		end
+	def crawl
+	entry = BlogEntry.new
+	entry.author = "Joanna"
+	entry.title = "My 1st Blog!"
+
+	display_name = "#{entry.title} By: #{entry.author}"
+	puts display_name
 	end
 end
 
