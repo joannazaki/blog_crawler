@@ -1,0 +1,53 @@
+
+
+h3 {
+  color: red;
+}
+
+h2 {
+  color: green;
+  font-style: italic;
+  font: 30px sans-serif;
+}
+
+
+
+#image {
+  text-align: center;
+}
+
+
+#headers {
+  font: 30px sans-serif;
+  text-align: center;
+  color: green;
+}
+
+
+table {
+  border-collapse: collapse;
+  font: 15px sans-serif;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th{
+  height: 30px;
+  text-align: left;
+  background-color: #800000;
+  color: black;
+}
+
+td {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+td, th {
+    padding: 5px;
+}
