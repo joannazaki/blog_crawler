@@ -1,11 +1,15 @@
+require 'mechanize'
+require 'byebug'
+require 'active_support'
+require 'active_support/core_ext'
+require './blog_post.rb'
+require './lib/mechanize_adapter.rb'
+
 class Crawler
-	def crawl
-	entry = BlogEntry.new
-	entry.author = "Joanna"
-	entry.title = "My 1st Blog!"
+  def crawl(url)
+    agent = Mechanize.new
+    agent.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
-	display_name = "#{entry.title} By: #{entry.author}"
-	puts display_name
-	end
+    page = agent.get(url)
+  end
 end
-
