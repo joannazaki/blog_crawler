@@ -11,5 +11,7 @@ class Crawler
     agent.agent.http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
     page = agent.get(url)
+
+    puts page.uri
   end
 end
